@@ -1,4 +1,3 @@
-# Assignment 3 sample R code
 
 library(nloptr)
 library(quantmod)
@@ -76,14 +75,13 @@ DATE <- function(yyyy,mm,dd) {
 
 #----------------------------------------------------
 setwd("/Users/zhangdonglei/Downloads")
-load("MQM530-TeamAssignment1.RData", verbose=TRUE)
+load("data.RData", verbose=TRUE)
 
 #############################################################
 #Part 1
 #----------------------------------------------------
 
 
-load("MQM530-TeamAssignment1.RData")
 # index(logret_X.xts)
 # coredata(logret_X.xts)
 logret = as.vector(coredata(logret_X.xts))
